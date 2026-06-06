@@ -51,7 +51,7 @@ const SheetContent = React.forwardRef(({ side = "right", className, children, ..
       {children}
       <SheetPrimitive.Close
         className="absolute right-8 top-8 transition-opacity outline-none">
-        <X className="text-3xl text-[#cbacf9]" />
+        <X className="text-3xl text-secondary" />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>

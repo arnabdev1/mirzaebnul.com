@@ -11,19 +11,19 @@ const Contact = () => {
     {
       icon: <FaPhoneAlt />,
       title: "Phone",
-      description: userInput.phone || "+1 469 947 4379",
+      description: userInput.phone || "+1 (806) 805-2881",
     },
     {
       icon: <FaEnvelope />,
       title: "Email",
-      description: userInput.email || "official.arnabdev@gmail.com",
+      description: userInput.email || "mirzhasa@ttu.edu",
     },
     {
       icon: <FaMapMarkerAlt />,
       title: "Address",
       description:
         userInput.address ||
-        "950 N Loop Road, TX 75080, USA",
+        "Lubbock, TX 79401",
     },
   ];
 
@@ -38,7 +38,7 @@ const Contact = () => {
       <div className="w-full sm:px-10 px-2 md:mt-[180px] flex flex-col  sm:gap-[30px] gap-[20px]">
         {/* <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10  bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-[#cbacf9]">Lets work together!</h3>
+              <h3 className="text-4xl text-secondary">Lets work together!</h3>
               <p className="text-white/60"></p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="First Name" />
@@ -75,12 +75,12 @@ const Contact = () => {
                   key={index}
                   className="flex items-center justify-center sm:gap-6 gap-2"
                 >
-                  <div className="w-[40px] h-[40px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-[#cbacf9] rounded-md flex items-center justify-center">
+                  <div className="w-[40px] h-[40px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-secondary rounded-md flex items-center justify-center">
                     <div className="xl:text-[28px] text-[20px] ">{item.icon}</div>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60">{item.title}</p>
-                    <h3 className="text-white sm:text-xl text-md">
+                    <p className="dark:text-white/60 text-black/70">{item.title}</p>
+                    <h3 className="dark:text-white text-black sm:text-xl text-md">
                       {item.description}
                     </h3>
                   </div>
@@ -93,7 +93,7 @@ const Contact = () => {
         <div className="w-full mb-8 xl:mb-0 justify-center items-start">
           <Social
             containerStyles="flex gap-6"
-            iconStyles="md:w-12 md:h-12 w-10 h-10 hover:scale-125 border border-[#cbacf9] rounded-full flex justify-center items-center text-[#cbacf9] text-base hover:bg-[#cbacf9] hover:text-primary transition-all duration-200"
+            iconStyles="md:w-12 md:h-12 w-10 h-10 hover:scale-125 border border-secondary rounded-full flex justify-center items-center text-secondary text-base hover:bg-secondary hover:text-primary transition-all duration-200"
           />
         </div>
       </div>

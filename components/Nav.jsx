@@ -15,10 +15,10 @@ const links = [
     name: "resume",
     path: "/cv.pdf",
   },
-  {
-    name: "magic",
-    path: "/magic",
-  },
+  // {
+  //   name: "magic",
+  //   path: "/magic",
+  // },
   {
     name: "contact",
     path: "/contact",
@@ -38,8 +38,8 @@ const Nav = () => {
             target={link.path === "/cv.pdf" ? "_blank" : undefined}
             className={`${
               link.path === pathname &&
-              "text-[#cbacf9] border-b-2 border-[#cbacf9]"
-            } capitalize font-medium hover:text-[#cbacf9] transition-all`}
+              "text-secondary border-b-2 border-secondary"
+            } capitalize font-medium hover:text-secondary transition-all`}
           >
             {link.name}
           </Link>

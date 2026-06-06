@@ -39,7 +39,7 @@ const Stats = memo(() => {
                               item.text.length < 15
                                 ? "max-w-[80px]"
                                 : "max-w-[120px]"
-                            } leading-snug text-white/80 md:text-lg text-xs sm:text-sm`}
+                            } leading-snug dark:text-white/80 text-black/80 md:text-lg text-xs sm:text-sm`}
               >
                 {item.text}
               </p>

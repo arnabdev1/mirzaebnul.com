@@ -14,7 +14,7 @@ const JetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Arnab Dev",
+  title: "Mirza Ebnul Hasan",
   description: "My Portfolio",
 };
 

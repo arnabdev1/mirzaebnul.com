@@ -25,13 +25,25 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary:"#010319",
-        secondary:"#cbacf9",
-        light:"#492c74",
-        accent:{
+        primary: "#000000",
+        secondary: {
+          DEFAULT: "#e90802",
+          50: "#fff1f0",
+          100: "#ffd6d5",
+          200: "#ffb3b0",
+          300: "#ff7f72",
+          400: "#ff4f3f",
+          500: "#e90802",
+          600: "#c00600",
+          700: "#9a0400",
+          800: "#700300",
+          900: "#470200",
+        },
+        light: "#ffffff",
+        accent: {
           DEFAULT: "#00ff99",
-          hover: "00e187"
-        }
+          hover: "#00e187",
+        },
       },
       keyframes: {
         "accordion-down": {

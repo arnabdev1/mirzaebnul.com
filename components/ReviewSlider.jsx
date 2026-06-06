@@ -55,7 +55,7 @@ const WorkExperience = memo(() => {
     <section className="w-full py-12 xl:py-20">
       <div className="container mx-auto">
         <h2 className="h2 text-center mb-12">
-          Work <span className="text-[#cbacf9]">Experience</span>
+          Work <span className="text-secondary">Experience</span>
         </h2>
 
         <div className="grid gap-6 max-w-5xl mx-auto">
@@ -66,11 +66,11 @@ const WorkExperience = memo(() => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.3 }}
-              className="bg-[#27272c] border border-[#cbacf9]/20 rounded-xl p-6 hover:border-[#cbacf9]/50 transition-all duration-300 group"
+              className="bg-[#27272c] border border-secondary/20 rounded-xl p-6 hover:border-secondary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0 flex justify-center md:justify-start">
-                  <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg overflow-hidden border-2 border-[#cbacf9]/30 group-hover:border-[#cbacf9]/60 transition-all duration-300">
+                  <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg overflow-hidden border-2 border-secondary/30 group-hover:border-secondary/60 transition-all duration-300">
                     <Image
                       src={item.img}
                       alt={item.company}
@@ -84,10 +84,10 @@ const WorkExperience = memo(() => {
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-2xl font-bold text-white group-hover:text-[#cbacf9] transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors duration-300">
                           {item.company}
                         </h3>
-                        <p className="text-[#cbacf9] font-semibold mt-1">
+                        <p className="text-secondary font-semibold mt-1">
                           {item.position}
                         </p>
                       </div>

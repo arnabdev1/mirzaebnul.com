@@ -4,53 +4,48 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const experience = [
   {
-    img: "/utd.png",
-    company: "University of Texas at Dallas",
+    img: "/ttuh.png",
+    company: "Texas Tech University - FCA Laboratory",
     position: "Undergraduate Research Assistant",
     content:
-      `• Engineered VAFuzz, a high-performance fuzzer(4000 executions/second) extended from AFL++. Implementing C/C++ configuration and input co-execution algorithm for presence-condition seed queues and variability-aware mutations. Achieved superior code coverage on 84% of benchmark programs.
-       • Extending the Google FuzzBench framework to support compile-time configurability, utilizing Docker containers to orchestrate scalable variability-aware fuzzing experiments.
-       • Developed complex Bash and Python automation scripts to manage the build, execution, and data extraction of large-scale fuzzing campaigns.`,
-    timeline: "1 October 2024 - Present",
+      `• Conducting research on aeronautical flows with a focus on improving aerodynamic, aeroelastic, and aeroacoustic performances.
+• Applying passive and active flow control techniques to enhance fluid-structure interaction behavior.
+• Supporting experimental setup design and data collection for ongoing aerodynamic performance studies.`,
+    timeline: "August 2025 - Current",
   },
   {
-    img: "/bondstein.jpeg",
-    company: "Bondstein Technologies",
-    position: "Software Engineer Intern",
+    img: "/ttu.png",
+    company: "Red Raider Racing",
+    position: "Apprenticeship Trainee",
     content:
-      `• Developed scalable, responsive web interfaces using Next.js and Tailwind CSS, integrating with Node.js backends to deliver seamless user experiences.
-• Optimized rendering paths by implementing memoization strategies (React.memo, useMemo) and code-splitting, resulting in a 40% reduction in component re-renders and a 1.5s decrease in Time to Interactive (TTI).
-• Refactored legacy API consumption patterns to use efficient data fetching hooks, reducing redundant network requests by 25% and improving application state stability.
-• Automated deployment workflows via GitHub Actions CI/CD pipelines, reducing build times by 30%`,
-    timeline: "1 June 2024 - 2 August 2024",
+      `• Supported shop tasks and documentation for design review.`,
+    timeline: "April 2025 - Current",
   },
   {
-    img: "/edification.png",
-    company: "Edification",
-    position: "CS Teaching Assistant",
+    img: "/ttu.png",
+    company: "Texas Tech IT Help Central",
+    position: "Student Assistant",
     content:
-      `• Taught python fundamentals to students of class 9 to class 11. 
-• Assisted senior computer science teacher to teach his courses of GCSE O level Computer Science(2210)`,
-    timeline: "1 October 2022 - 1 December 2023",
+      `• Resolved 15-20 technical support tickets per shift (Windows/macOS login issues, imaging, account resets); documented fixes in the knowledge base.
+• Reorganized office records (300+ files), reducing retrieval time by ~40%.`,
+    timeline: "September 2025 - Current",
   },
   {
-    img: "/nifw.png",
+    img: "/JBL.jpg",
+    company: "Jamuna Bank",
+    position: "IT Intern - Technical Systems & Data Analysis",
+    content:
+      `• Automated 10+ data workflows and dashboards in MATLAB/Excel, accelerating report generation by ~35% for the treasury team.
+• Drafted 8 standard operating procedures for troubleshooting and secure access provisioning.`,
+    timeline: "June 2025 - August 2025",
+  },
+  {
+    img: "/nif.png",
     company: "Next Initiative Foundation",
-    position: "President, Web Developer",
+    position: "Co-Founder",
     content:
-      `• Recruited and led 300+ volunteers, chief organiser at multiple fund raising youth events of 4000+ participants. 
-• Our work has been featured in national TV channels like Atn Bangla and Ek Takar Khobor. Built portfolio website using React.`,
-    timeline: "1 August 2020 - Present",
-  },
-  {
-    img: "/essstem.jpeg",
-    company: "ESS STEM Club",
-    position: "President",
-    content:
-      `• Leader during growth from 50 members to 200+ members, making it the school’s largest academic club. 
-• Chief organiser of intra-school events(Science fair, Science film festival, Science and Math Olympiad) and academic sessions. 
-• Prepared question sets on Mathematics, Physics, Chemistry, ICT, Programming, and Astrophysics for olympiads.`,
-    timeline: "1 October 2021 - 1 January 2024",
+      `• Coordinated 20+ awareness events (online and in-person) reaching 500+ students, managing logistics and media outreach.`,
+    timeline: "September 2020 - January 2025",
   },
 ];
 
@@ -59,7 +54,7 @@ const WorkExperience = memo(() => {
     <section className="w-full py-12 xl:py-20">
       <div className="container mx-auto">
         <h2 className="h2 text-center mb-12">
-          Work <span className="text-[#cbacf9]">Experience</span>
+          Work <span className="text-secondary">Experience</span>
         </h2>
 
         <div className="grid gap-6 max-w-5xl mx-auto">
@@ -70,12 +65,12 @@ const WorkExperience = memo(() => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.3 }}
-              className="bg-[#27272c] border border-[#cbacf9]/20 rounded-xl p-6 hover:border-[#cbacf9]/50 transition-all duration-300 group"
+              className="bg-[#27272c] border border-secondary/20 rounded-xl p-6 hover:border-secondary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Company Logo */}
                 <div className="flex-shrink-0 flex justify-center md:justify-start">
-                  <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg overflow-hidden border-2 border-[#cbacf9]/30 group-hover:border-[#cbacf9]/60 transition-all duration-300">
+                  <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg overflow-hidden border-2 border-secondary/30 group-hover:border-secondary/60 transition-all duration-300">
                     <Image
                       src={item.img}
                       alt={item.company}
@@ -90,10 +85,10 @@ const WorkExperience = memo(() => {
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-2xl font-bold text-white group-hover:text-[#cbacf9] transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors duration-300">
                           {item.company}
                         </h3>
-                        <p className="text-[#cbacf9] font-semibold mt-1">
+                        <p className="text-secondary font-semibold mt-1">
                           {item.position}
                         </p>
                       </div>

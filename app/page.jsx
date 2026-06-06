@@ -20,7 +20,7 @@ const Home = memo(() => {
   
   const socialProps = useMemo(() => ({
     containerStyles: "flex gap-6",
-    iconStyles: "md:w-12 md:h-12 w-10 h-10 hover:scale-125 border border-[#cbacf9] rounded-full flex justify-center items-center text-[#cbacf9] text-base hover:bg-[#cbacf9] hover:text-primary transition-all duration-200"
+    iconStyles: "md:w-12 md:h-12 w-10 h-10 hover:scale-125 border border-secondary rounded-full flex justify-center items-center text-secondary text-base hover:bg-secondary hover:text-primary transition-all duration-200"
   }), []);
 
   return (
@@ -28,19 +28,19 @@ const Home = memo(() => {
       <div className="container w-full h-full mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none ">
-            <span className="text-xl text-white/80">
-              Full-Stack Software Developer
+            <span className="text-xl dark:text-white/80 text-black/80">
+              Mechanical Engineer
             </span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />
-              <div className="text-[#cbacf9] flex flex-row gap-[2vw] xl:justify-normal justify-center items-center">
+              <div className="text-secondary flex flex-row gap-[2vw] xl:justify-normal justify-center items-center">
                 <div id="name">
-                  {userInput.firstName || "Arnab"} {userInput.lastName || "Dev"}
+                  {userInput.firstName || "Mirza Ebnul"} {userInput.lastName || "Hasan"}
                 </div>
               </div>
             </h1>
-            <p className="w-full mb-9 text-white font-bold">
-              Looking for SWE Intern roles.
+            <p className="w-full mb-9 dark:text-white text-black font-bold">
+              Looking for ME Intern roles.
             </p>
             <Stats />
           </div>

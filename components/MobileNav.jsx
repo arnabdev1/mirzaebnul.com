@@ -19,10 +19,10 @@ const MobileNav = () => {
       name: "resume",
       path: "cv.pdf",
     },
-    {
-      name: "magic",
-      path: "/magic",
-    },
+    // {
+    //   name: "magic",
+    //   path: "/magic",
+    // },
     {
       name: "contact",
       path: "/contact",
@@ -30,11 +30,11 @@ const MobileNav = () => {
   ];
   const pathname = usePathname();
   return (
-    <Sheet className="bg-[#492c74] dark:bg-primary">
+    <Sheet className="bg-[#ffffff] dark:bg-primary">
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="md:text-[32px] text-[24px] text-[#cbacf9]" />
+        <CiMenuFries className="md:text-[32px] text-[24px] text-secondary" />
       </SheetTrigger>
-      <SheetContent className="bg-[#492c74] dark:bg-primary flex flex-col">
+      <SheetContent className="bg-[#ffffff] dark:bg-primary flex flex-col">
         <div className=" mt-10 mb-10 text-center flex flex-row items-center justify-center gap-2 md:text-2xl text-xl">
           <div>{userInput.firstName || "Arnab"}</div>{" "}
           <div>{userInput.lastName || "Dev"}</div>
@@ -47,8 +47,8 @@ const MobileNav = () => {
               key={index}
               className={`${
                 link.path === pathname &&
-                "text-[#cbacf9] border-b-2 border-[#cbacf9]"
-              } capitalize font-medium hover:text-[#cbacf9]   transition-all`}
+                "text-secondary border-b-2 border-secondary"
+              } capitalize font-medium hover:text-secondary   transition-all`}
             >
               {link.name}
             </Link>

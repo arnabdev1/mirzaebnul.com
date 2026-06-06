@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const publications = [
   {
-    title: "Variability Aware Fuzzing",
-    authors: "Meah Tahmeed Ahmed, Arnab Dev, Shiyi Wei",
-    conference: "International Conference on Software Engineering (ICSE), 2026",
-    status: "Accepted",
-    link: "/vafuzz.pdf",
+    title: "Distributed Electric Ducted Fan Propulsion for Urban Air Mobility",
+    authors: "Mirza Ebnul Hasan, Maldonado Victor ",
+    conference: "Undergraduate Research Conference (URC), 2026",
+    status: "Submitted",
+    link: "/urc2026.pdf",
   },
   // Add more publications here
 ];
@@ -18,7 +18,7 @@ const Publications = memo(() => {
     <section className="w-full py-12 xl:py-20">
       <div className="container mx-auto">
         <h2 className="h2 text-center mb-12">
-          Research <span className="text-[#cbacf9]">&</span> Publications
+          Research <span className="text-secondary">&</span> Publications
         </h2>
 
         <div className="grid gap-6 max-w-5xl mx-auto">
@@ -29,7 +29,7 @@ const Publications = memo(() => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.3 }}
-              className="bg-[#27272c] border border-[#cbacf9]/20 rounded-xl p-6 hover:border-[#cbacf9]/50 transition-all duration-300 group"
+              className="bg-[#27272c] border border-secondary/20 rounded-xl p-6 hover:border-secondary/50 transition-all duration-300 group"
             >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
@@ -48,13 +48,13 @@ const Publications = memo(() => {
                             {publication.status}
                           </span>
                         </div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-[#cbacf9] transition-colors duration-300 mb-2">
+                        <h3 className="text-xl font-bold text-white group-hover:text-secondary transition-colors duration-300 mb-2">
                           {publication.title}
                         </h3>
                       </div>
                     </div>
 
-                    <p className="text-[#cbacf9] font-medium mb-2">
+                    <p className="text-secondary font-medium mb-2">
                       {publication.authors}
                     </p>
 
@@ -68,7 +68,7 @@ const Publications = memo(() => {
                       href={publication.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-[#cbacf9]/10 hover:bg-[#cbacf9]/20 border border-[#cbacf9]/30 rounded-lg text-[#cbacf9] transition-all duration-300 group-hover:scale-105"
+                      className="flex items-center gap-2 px-4 py-2 bg-secondary/10 hover:bg-secondary/20 border border-secondary/30 rounded-lg text-secondary transition-all duration-300 group-hover:scale-105"
                     >
                       <span className="text-sm font-medium">View Paper</span>
                       <svg
