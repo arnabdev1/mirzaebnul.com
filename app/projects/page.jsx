@@ -56,7 +56,7 @@ const data = [
               className="bg-[#27272c] border border-secondary/20 rounded-xl p-6 hover:border-secondary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="flex-shrink-0 flex justify-center md:justify-start">
+                {/* <div className="flex-shrink-0 flex justify-center md:justify-start">
                   <div className="relative w-full md:w-48 h-40 md:h-32 rounded-lg overflow-hidden border-2 border-secondary/30 group-hover:border-secondary/60 transition-all duration-300">
                     <Image
                       src={project.img}
@@ -66,7 +66,7 @@ const data = [
                       className="object-cover"
                     />
                     </div>
-                  </div>
+                  </div> */}
 
 
                   <div className="flex-1 flex flex-col justify-between">
